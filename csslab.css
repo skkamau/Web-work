@@ -1,0 +1,272 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: url('background image.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  color: #181818;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+
+/* Header Section */
+.header {
+  background: rgba(24,24,24,0.92);
+  color: #fff;
+  padding: 48px 0 24px 0;
+  text-align: center;
+  border-bottom: 4px solid #222;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.13);
+  letter-spacing: 2px;
+  position: relative;
+  z-index: 1;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2.7rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+/* Navigation */
+nav {
+  text-align: center;
+  margin-bottom: 36px;
+  background: rgba(255,255,255,0.96);
+  padding: 18px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  border-bottom: 2px solid #181818;
+  position: relative;
+  z-index: 1;
+}
+
+nav a {
+  text-decoration: none;
+  color: #181818;
+  margin: 0 22px;
+  font-weight: 600;
+  font-size: 1.15rem;
+  letter-spacing: 1px;
+  transition: color 0.2s, border-bottom 0.2s, background 0.2s;
+  padding: 6px 10px 6px 10px;
+  border-radius: 4px;
+  border-bottom: 2px solid transparent;
+  display: inline-block;
+}
+
+nav a:hover {
+  color: #fff;
+  background: #181818;
+  border-bottom: 2px solid #181818;
+}
+
+/* Flip Card Container */
+.lead-container {
+  display: flex;
+  justify-content: center;
+  margin: 36px 0 48px 0;
+  position: relative;
+  z-index: 1;
+}
+
+/* Flip Card Styles */
+.flip-card {
+  background-color: transparent;
+  width: 340px;
+  height: 230px;
+  perspective: 1000px;
+  margin: 0 auto;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s cubic-bezier(.4,2,.6,1);
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 14px;
+  padding: 32px;
+  box-shadow: 0 6px 28px rgba(0,0,0,0.13);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #181818;
+  background: rgba(255,255,255,0.97);
+}
+
+.flip-card-front {
+  background: rgba(255,255,255,0.97);
+}
+
+.flip-card-back {
+  background: rgba(24,24,24,0.97);
+  color: #fff;
+  transform: rotateY(180deg);
+}
+
+/* Team Cards */
+.team {
+  display: flex;
+  justify-content: center;
+  gap: 36px;
+  flex-wrap: wrap;
+  padding: 24px;
+  max-width: 1100px;
+  margin: 0 auto 48px auto;
+  position: relative;
+  z-index: 1;
+}
+
+.card {
+  background: rgba(255,255,255,0.97);
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+  padding: 28px 36px;
+  text-align: center;
+  width: 240px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  color: #181818;
+  position: relative;
+  z-index: 1;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.04);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.13);
+}
+
+.card img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 16px;
+  border: 2.5px solid #181818;
+  background: #fff;
+  object-fit: cover;
+}
+
+.card h2 {
+  margin: 14px 0 8px 0;
+  font-size: 1.25rem;
+  color: #181818;
+  font-weight: 700;
+}
+
+.card p {
+  color: #444;
+  font-size: 1.05rem;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Table Styles */
+table {
+  width: 85%;
+  margin: 30px auto;
+  border-collapse: collapse;
+  background-color: rgba(255,255,255,0.97);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+  color: #181818;
+  position: relative;
+  z-index: 1;
+}
+
+table, th, td {
+  border: 1px solid #222;
+}
+
+th, td {
+  padding: 14px;
+  text-align: center;
+}
+
+th {
+  background: #181818;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Form Styles */
+form {
+  width: 340px;
+  margin: 40px auto;
+  padding: 28px 32px;
+  background-color: rgba(255,255,255,0.97);
+  border: 1px solid #222;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+  color: #181818;
+  position: relative;
+  z-index: 1;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  margin-bottom: 18px;
+  border: 1px solid #222;
+  border-radius: 5px;
+  font-size: 1rem;
+  background: #fff;
+  color: #181818;
+  transition: border 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border: 1.5px solid #181818;
+  outline: none;
+}
+
+input[type="submit"] {
+  background-color: #181818;
+  color: #fff;
+  border: none;
+  padding: 12px 0;
+  width: 100%;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s;
+}
+
+input[type="submit"]:hover {
+  background-color: #fff;
+  color: #181818;
+  border: 1px solid #181818;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .team {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+  .lead-container {
+    margin: 24px 0 32px 0;
+  }
+  .card {
+    width: 90%;
+    max-width: 340px;
+  }
+}

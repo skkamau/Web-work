@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cars for Sale | samuel kamau Motors</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .content-bg {
+            max-width: 800px;
+            margin: 40px auto 0 auto;
+            background: rgba(24,24,24,0.88);
+            color: #ededed;
+            border-radius: 14px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.25);
+            padding: 36px 36px 30px 36px;
+            position: relative;
+            z-index: 2;
+        }
+        .content-bg h1, .content-bg h2, .content-bg h3, .content-bg p {
+            text-align: center;
+        }
+        .content-bg table {
+            width: 100%;
+            margin: 20px 0;
+            background: rgba(34,34,34,0.92);
+            color: #ededed;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .content-bg th, .content-bg td {
+            padding: 12px;
+            text-align: center;
+        }
+        .content-bg th {
+            background: #181818;
+            color: #ededed;
+        }
+        .content-bg tr:nth-child(even) {
+            background: rgba(255,255,255,0.04);
+        }
+        .content-bg form {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .content-bg label {
+            margin-right: 18px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="cars.html">Cars for Sale</a> |
+        <a href="contact.html">Contact Us</a> |
+        <a href="dashboard.html">Dashboard</a> |
+        <a href="login page.html">Login</a>
+    </nav>
+    <div class="content-bg">
+        <h1>Our Featured Cars</h1>
+        <h2>Mercedes-Benz C200</h2>
+        <ul>
+            <li>Engine: 1.5L Turbocharged</li>
+            <li>Horsepower: 184 HP</li>
+            <li>Fuel Efficiency: 14 km/l</li>
+        </ul>
+
+        <h2>Other Models</h2>
+        <table border="1">
+            <tr><th>Car</th><th>Brand</th><th>Price(ksh)</th></tr>
+            <tr><td>Audi A4</td><td>Audi</td><td>45,0000</td></tr>
+            <tr><td>BMW 320i</td><td>BMW</td><td>48,0000</td></tr>
+            <tr><td>Toyota Crown</td><td>Toyota</td><td>40,0000</td></tr>
+        </table>
+
+        <h3>Choose Your Favorite</h3>
+        <form>
+            <label><input type="checkbox" name="car" value="Mercedes-Benz C200"> Mercedes-Benz C200</label>
+            <label><input type="checkbox" name="car" value="Audi A4"> Audi A4</label>
+            <label><input type="checkbox" name="car" value="BMW 320i"> BMW 320i</label>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>samuel kamau Motors - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="cars.html">Cars for Sale</a> |
+        <a href="contact.html">Contact Us</a> |
+        <a href="dashboard.html">Dashboard</a>
+    </nav>
+    <div id="topBar">
+        <div id="clock">Loading time...</div>
+        <button onclick="toggleDarkMode()">
+            <span class="icon" id="modeIcon">🌞</span>
+            Toggle Dark Mode
+        </button>
+    </div>
+    <div class="content-bg">
+        <h1>Welcome to samuel kamau Motors</h1>
+        <p>Your trusted partner for luxury and performance vehicles.</p>
+        <img src="https://kai-and-karo.ams3.cdn.digitaloceanspaces.com/media/vehicles/images/IMG-20240327-WA0020.jpg" width="400" alt="Showroom">
+        <h2>About Us</h2>
+        <p>Here SK specializes in high-end vehicles offering elegance, speed, and reliability.</p>
+    </div>
+    <script>
+        function updateClock() {
+            const now = new Date();
+            const options = { 
+                weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'
+            };
+            const dateStr = now.toLocaleDateString(undefined, options);
+            const timeStr = now.toLocaleTimeString();
+            document.getElementById('clock').innerHTML = dateStr + " | " + timeStr;
+        }
+        setInterval(updateClock, 1000);
+        updateClock();
+
+        // Dark mode toggle
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+            const modeIcon = document.getElementById('modeIcon');
+            if (document.body.classList.contains('dark-mode')) {
+                modeIcon.textContent = "🌙";
+            } else {
+                modeIcon.textContent = "🌞";
+            }
+        }
+    </script>

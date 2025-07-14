@@ -1,0 +1,54 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  transition: background-color 0.5s, color 0.5s;
+  background: url('background image.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  color: #ededed;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+body.dark-mode {
+  background: #181818;
+  color: #ededed;
+}
+
+#topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background: rgba(24,24,24,0.92);
+  padding: 16px 28px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  margin-bottom: 24px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background: rgba(34,34,34,0.97);
+  color: #ededed;
+  border: 2px solid #ededed;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+}
+
+button:hover {
+  background: #ededed;
+  color: #181818;
+  border: 2px solid #181818;
+}
+
+.icon {
+  font-size: 18px;
+}
+
+#clock {
+  font-size: 18px;
+  font-
